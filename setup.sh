@@ -21,6 +21,9 @@ npm install -g jshint
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
 
+#Install the python-software-properties package to enable installing PPAs
+sudo apt-get install python-software-properties
+
 # Install emacs24
 # https://launchpad.net/~cassou/+archive/emacs
 sudo apt-add-repository -y ppa:cassou/emacs
