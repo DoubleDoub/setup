@@ -33,9 +33,9 @@ sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 #config git
 git config --global color.ui true
 
-# Install Heroku toolbelt
+# Uncomment to Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
-wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+#wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 # git pull and install dotfiles as well
 cd $HOME
