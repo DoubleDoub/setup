@@ -52,7 +52,6 @@ sudo dpkg -i getskype-*
 sudo apt-get -f install
 rm -f getskype-linux-beta-ubuntu-64
 
-#instlall chrome
 sudo apt-get install libxss1 libappindicator1 libindicator7
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
@@ -83,9 +82,12 @@ cat ./setup/bash_profile_course >> ./dotfiles/.bashrc
 
 #install sublime text 3
 #http://www.webupd8.org/2013/07/sublime-text-3-ubuntu-ppa-now-available.html
-sudo add-apt-repository ppa:webupd8team/sublime-text-3
+echo | sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo apt-get update
 sudo apt-get install sublime-text-installer
+
+#install gimp
+sudo apt-get installl gimp -y
 
 
 

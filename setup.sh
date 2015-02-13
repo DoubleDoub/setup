@@ -24,6 +24,12 @@ nvm use v0.10.35
 # http://jshint.com/
 npm install -g jshint
 
+#install grunt command line interface
+npm install -g grunt-cli
+
+#install bower
+npm install -g bower
+
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
@@ -52,7 +58,6 @@ sudo dpkg -i getskype-*
 sudo apt-get -f install
 rm -f getskype-linux-beta-ubuntu-64
 
-#instlall chrome
 sudo apt-get install libxss1 libappindicator1 libindicator7
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
@@ -86,6 +91,9 @@ cat ./setup/bash_profile_course >> ./dotfiles/.bashrc
 echo | sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo apt-get update
 sudo apt-get install sublime-text-installer
+
+#install gimp
+sudo apt-get install -y gimp
 
 
 
