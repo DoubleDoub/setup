@@ -8,6 +8,7 @@ follows:
 cd $HOME
 sudo apt-get install -y git-core
 git clone https://github.com/DoubleDoub/setup.git
+git checkout -b ubuntu-desktop origin/ubuntu-desktop
 ./setup/setup.sh   
 ```
 
