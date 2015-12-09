@@ -17,8 +17,11 @@ rm -f ./install2.sh
 # Load nvm and install node
 source $HOME/.nvm/nvm.sh
 # when you change this also change it in the dotfiles repo which will be cloned later in this script
-nvm install v0.10.35
-nvm use v0.10.35
+nvm install v4.2.3
+nvm use v4.2.3
+
+# Update npm to latest version
+curl -L https://npmjs.com/install.sh | sh
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
