@@ -88,6 +88,18 @@ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-pro
 #Just add it to the bash_profile instead of replacing
 cat ./setup/bash_profile_course >> ./dotfiles/.bashrc
 
+#strange hack to fix bug with ubuntu sublime wbond package manager none utf8 characters
+echo "export LANG=\"en_US.utf8\"" >> ~/dotfiles/.bashrc_custom
+echo "export LANGUAGE=\"en_US.utf8\"" >> ~/dotfiles/.bashrc_custom
+echo "export LC_ALL=\"en_US.utf8\"" >> ~/dotfiles/.bashrc_custom
+
+#strange hack to fix bug with ubuntu sublime wbond package manager none utf8 characters
+#fix in context of GUI (Ubuntu Unity) usage
+echo "export LANG=\"en_US.utf8\"" >>  ~/.profile
+echo "export LANGUAGE=\"en_US.utf8\"" >> ~/.profile
+echo "export LC_ALL=\"en_US.utf8\"" >> ~/.profile
+
+
 #install sublime text 3
 #http://www.webupd8.org/2013/07/sublime-text-3-ubuntu-ppa-now-available.html
 echo | sudo add-apt-repository ppa:webupd8team/sublime-text-3
