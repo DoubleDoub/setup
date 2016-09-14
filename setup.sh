@@ -10,7 +10,7 @@ sudo apt-get install -y curl
 # I dont know why I have to do this but it works so...
 #mv install.sh install2.sh
 #chmod 777 install2.sh
-#s#udo ./install2.sh
+#sudo ./install2.sh
 #rm -f ./install2.sh
 
 # Load nvm and install node
