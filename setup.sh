@@ -1,6 +1,10 @@
 #!/bin/bash
 # Simple setup.sh for configuring Ubuntu 12.04 LTS EC2 instance
 # for headless setup. 
+
+# add software source for the ubuntu git maintainers team
+sudo add-apt-repository ppa:git-core/ppa
+
 sudo apt-get install -y git
 sudo apt-get install -y curl
 
