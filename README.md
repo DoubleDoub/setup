@@ -20,6 +20,10 @@ manually install nvm to avoid permission errors will fix nvm permission related 
 ./setup/setup.sh   
 ```
 
+to set monakai as theme in emacs 24
+open emacs and load the theme with the interactive function load-theme
+M-x load-theme RET monokai
+
 See also http://github.com/startup-class/dotfiles and
 [Startup Engineering Video Lectures 4a/4b](https://class.coursera.org/startup-001/lecture/index)
 for more details.
