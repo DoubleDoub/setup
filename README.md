@@ -8,7 +8,11 @@ follows:
 cd $HOME
 sudo apt-get install -y git-core
 git clone https://github.com/DoubleDoub/setup.git
+
+if you want desktop programs like skype, chrome and sublimetext3 use the desktop branch
 git checkout -b ubuntu-desktop origin/ubuntu-desktop
+
+
 
 this does not work all to great
 

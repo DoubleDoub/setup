@@ -2,6 +2,9 @@
 # Simple setup.sh for configuring Ubuntu 12.04 LTS EC2 instance
 # for headless setup. 
 
+#Install the python-software-properties package to enable installing PPAs
+sudo apt-get install python-software-properties
+
 # add software source for the ubuntu git maintainers team
 sudo add-apt-repository ppa:git-core/ppa
 
@@ -40,9 +43,6 @@ npm install -g bower
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
 
-#Install the python-software-properties package to enable installing PPAs
-sudo apt-get install python-software-properties
-
 # Install emacs24
 # https://launchpad.net/~cassou/+archive/emacs
 sudo apt-add-repository -y ppa:cassou/emacs
@@ -55,20 +55,6 @@ git config --global color.ui true
 # Uncomment to Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
 #wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
-
-#install skype
-wget http://www.skype.com/go/getskype-linux-beta-ubuntu-64
-#need this for the skype status bar icons
-sudo apt-get install sni-qt sni-qt:i386
-sudo dpkg -i getskype-*
-sudo apt-get -f install
-rm -f getskype-linux-beta-ubuntu-64
-
-sudo apt-get install libxss1 libappindicator1 libindicator7
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome*.deb
-rm -f google-chrome-stable_current_amd64.deb
-
 
 # git pull and install dotfiles as well
 cd $HOME
@@ -96,6 +82,20 @@ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-pro
 #Just add it to the bash_profile instead of replacing
 cat ./setup/bash_profile_course >> ./dotfiles/.bashrc
 
+#install skype
+wget http://www.skype.com/go/getskype-linux-beta-ubuntu-64
+#need this for the skype status bar icons
+sudo apt-get install sni-qt sni-qt:i386
+sudo dpkg -i getskype-*
+sudo apt-get -f install
+rm -f getskype-linux-beta-ubuntu-64
+
+sudo apt-get install libxss1 libappindicator1 libindicator7
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome*.deb
+rm -f google-chrome-stable_current_amd64.deb
+
+
 #strange hack to fix bug with ubuntu sublime wbond package manager none utf8 characters
 echo "export LANG=\"en_US.utf8\"" >> ~/dotfiles/.bashrc_custom
 echo "export LANGUAGE=\"en_US.utf8\"" >> ~/dotfiles/.bashrc_custom
@@ -116,3 +116,4 @@ sudo apt-get install sublime-text-installer
 
 #install gimp
 sudo apt-get install -y gimp
+
