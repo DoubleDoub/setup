@@ -74,11 +74,9 @@ ln -sf dotfiles/.emacs.d .
 #install monokai theme for emacs
 sudo wget  https://raw.githubusercontent.com/onekelvinsmith/monokai-emacs/master/monokai-theme.el
 sudo mv monokai-theme.el ~/dotfiles/.emacs.d/themes
-echo "(add-to-list 'custom-theme-load-path \"~/dotfiles/.emacs.d/themes\")" | sudo tee -a ./dotfiles/.emacs.d/init.el
 
 # https://www.udacity.com/course/viewer#!/c-ud775-nd/l-2980038599/m-3333158951
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-#Just add it to the bash_profile instead of replacing
-cat ./setup/bash_profile_course >> ./dotfiles/.bashrc
+
 
