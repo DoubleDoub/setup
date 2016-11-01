@@ -13,7 +13,10 @@ sudo apt-get install -y curl
 
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
-# wget https://raw.github.com/creationix/nvm/master/install.sh
+ wget https://raw.github.com/creationix/nvm/master/install.sh
+chmod 755 install.sh
+./install.sh
+rm ./install.sh
 # I dont know why I have to do this but it works so...
 #mv install.sh install2.sh
 #chmod 777 install2.sh
@@ -23,8 +26,8 @@ sudo apt-get install -y curl
 # Load nvm and install node
 source $HOME/.nvm/nvm.sh
 # when you change this also change it in the dotfiles repo which will be cloned later in this script
-nvm install v4.2.3
-nvm use v4.2.3
+nvm install v7.0.0
+nvm use v7.0.0
 
 # Update npm to latest version
 curl -L https://npmjs.com/install.sh | sh
@@ -74,11 +77,4 @@ ln -sf dotfiles/.emacs.d .
 #install monokai theme for emacs
 sudo wget  https://raw.githubusercontent.com/onekelvinsmith/monokai-emacs/master/monokai-theme.el
 sudo mv monokai-theme.el ~/dotfiles/.emacs.d/themes
-echo "(add-to-list 'custom-theme-load-path \"~/dotfiles/.emacs.d/themes\")" | sudo tee -a ./dotfiles/.emacs.d/init.el
-
-# https://www.udacity.com/course/viewer#!/c-ud775-nd/l-2980038599/m-3333158951
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-#Just add it to the bash_profile instead of replacing
-cat ./setup/bash_profile_course >> ./dotfiles/.bashrc
 
