@@ -79,8 +79,8 @@ sudo wget  https://raw.githubusercontent.com/onekelvinsmith/monokai-emacs/master
 sudo mv monokai-theme.el ~/dotfiles/.emacs.d/themes
 
 # https://www.udacity.com/course/viewer#!/c-ud775-nd/l-2980038599/m-3333158951
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+wget -P ~/setup/ https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash ~/setup/
+wget -P ~/setup/ https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh ~/setup/
 
 
 
