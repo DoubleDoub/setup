@@ -52,6 +52,12 @@ sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get -qq update
 sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
+# clone tern js for javascript autocomplet features
+git clone https://github.com/ternjs/tern.git
+cd tern
+npm install
+cd ..
+
 #config git
 git config --global color.ui true
 
