@@ -42,6 +42,9 @@ npm install -g grunt-cli
 #install bower
 npm install -g bower
 
+#install gulp
+npm install -g gulp-cli
+
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
