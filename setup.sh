@@ -45,6 +45,8 @@ npm install -g bower
 #install gulp
 npm install -g gulp-cli
 
+npm install -g nodemon
+
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
