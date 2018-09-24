@@ -26,8 +26,8 @@ rm ./install.sh
 # Load nvm and install node
 source $HOME/.nvm/nvm.sh
 # when you change this also change it in the dotfiles repo which will be cloned later in this script
-nvm install v7.0.0
-nvm use v7.0.0
+nvm install v8.12.0
+nvm use v8.12.0
 
 # Update npm to latest version
 curl -L https://npmjs.com/install.sh | sh
